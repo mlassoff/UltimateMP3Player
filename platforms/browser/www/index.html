@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Ultimate MP3 Player</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="musicPlayer.js"></script>
+        <link rel="stylesheet" href="musicStyles.css"/>
+    </head>
+    <body>
+        <div data-role="page">
+        <div data-role="header">
+        <h1>Ultimate MP3 Player</h1>    
+        </div>
+        <div data-role="content">
+            <audio id="audioPlayer"></audio>
+            <img src="ltp.png" />
+            <p>Music Provided by Free Music Archive.</p>
+            <div id="buttons">
+            <button id="btnPlay">Play</button>
+            <button id="btnPause">Pause</button>
+            <button id="btnStop">Stop</button>
+            <div id="songInfo">
+            <p><strong>Now Playing: </strong><output id='songTitle'></output></p>
+            <p><strong>Artist: </strong><output id='songArtist'></output></p>
+            <p><strong>Time: </strong><output id='songTime'>00:00</output></p>
+            </div>
+            </div>
+            <div id="songs"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+        <h2>&copy;2018 LearnToProgram.tv</h2>    
+        </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
